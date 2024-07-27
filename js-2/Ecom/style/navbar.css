@@ -1,0 +1,32 @@
+nav,ul{
+    display: flex;
+  
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.12), 0 16px 16px rgba(0,0,0,0.12);
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+   width: 60%;
+}
+
+ul:nth-child(1){
+    justify-content: space-around;
+}
+
+ul:nth-child(2){
+    width: 10%;
+    justify-content: space-evenly;
+}
+
