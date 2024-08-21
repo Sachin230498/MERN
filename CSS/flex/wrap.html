@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 100%;
+            height: 100%;
+            border: 5px solid ;
+            display: flex;
+            /* flex-wrap: nowrap; default */
+            /* flex-wrap: wrap; */
+            flex-wrap: wrap-reverse;
+            font-size: 30px;
+
+        }
+        #wrap>div{
+            width: 200px;
+            height: 200px;
+        }
+        #wrap>div:nth-child(2n+1){
+           background-color: aqua;
+        }
+        #wrap>div:nth-child(2n){
+           background-color: rgb(0, 13, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+</html>

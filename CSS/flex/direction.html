@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #flex{
+            font-size: 30px;
+            width: 100%;
+            height: 400px;
+            border: 5px solid red;
+            display: flex;
+            /* flex-direction: row; default */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            flex-direction: column-reverse;
+
+        }
+        #flex>div{
+            width: 22%;
+            height: 100%;
+        }
+
+        #flex>div:nth-child(1){
+            background-color: aqua;
+            
+        }
+
+        #flex>div:nth-child(2){
+            background-color: red;
+            
+        }
+
+        #flex>div:nth-child(3){
+            background-color: black;
+            color: white;
+            
+        }
+
+        #flex>div:nth-child(4){
+            background-color: pink;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="flex">
+        <div>box-1</div>
+        <div>box-2</div>
+        <div>box-3</div>
+        <div>box-4</div>      
+    </div>
+</body>
+</html>
