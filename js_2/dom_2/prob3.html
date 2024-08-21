@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+         <button >click</button>
+    </div>
+ 
+</body>
+  <script>
+
+//   let button = document.getElementsByTagName("button");
+//   console.log(button[0]);
+
+
+let button = document.querySelector("button");
+// console.log(button)
+
+// button.addEventListener("name of event", function)
+
+button.addEventListener("click", fun1)
+
+     
+
+      
+
+    function fun1(event) {
+        console.log(event.target.parentNode)
+        let a = event.target.parentNode
+        a.style.backgroundColor = "red"
+      alert("Hello World!");
+    }
+
+  </script>
+</html>

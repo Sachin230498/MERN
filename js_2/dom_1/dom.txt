@@ -1,0 +1,3 @@
+dom - document object model
+
+dom is technique to access the html element with the help of js

@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-2</title>
+</head>
+<body>
+    <h1 id="head" >I am heading-1</h1>
+    <h2 class="h2"  id="heading">I am heading 2</h2>
+    <p class="h2">I am para</p>
+    <h4 class="h2">I am heading 4</h4>
+</body>
+<script>
+    // let a = document.getElementById("head")
+    // console.log(a)
+ 
+    let b = document.getElementsByClassName("h2")
+    // console.log(b.length)
+    // console.log( b[0].innerText)
+    // console.log( b[1].innerText)
+    for(let i = 0; i < b.length; i++){
+        console.log(b[i].innerText)
+    }
+
+
+    // let arr = [2,45,8,9]
+    
+    // for(let i = 0; i < arr.length; i++){
+    //     console.log(arr[i])
+    // }
+
+    
+
+
+    
+</script>
+</html>

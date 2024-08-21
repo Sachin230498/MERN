@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="n">Name</h1>
+    <h1 id="p">Password</h1>
+    <div>
+      <input id="name" type="text" placeholder="Enter your name" />
+      <input id="pass" type="number" placeholder="Enter your password" />
+      <button onclick="getdata()">Submit</button>
+    </div>
+  </body>
+
+  <script>
+       
+       let n = document.getElementById("n");
+       let p = document.getElementById("p");
+
+      function getdata() {
+        var name = document.getElementById('name').value;
+        var pass = document.getElementById('pass').value;
+        
+        n.innerText = name;
+        p.innerText = pass;
+
+        console.log(name, pass)
+      }
+  </script>
+</html>

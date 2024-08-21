@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="n"></h1>
+    <h2 id="p"></h2>
+
+    <form>
+      <input id="name" type="text" placeholder="enter you username" />
+      <input id="pass" type="password" placeholder="enter your password" />
+      <input type="submit"/>
+    </form>
+
+  </body>
+  <script>
+    let form = document.querySelector('form');
+    form.addEventListener('submit', subfun)
+
+    let n = document.getElementById('n');
+    let p = document.getElementById('p');
+
+    // let pass = document.getElementById('pass');
+    // let name = document.getElementById('name');
+
+    function subfun(){
+        event.preventDefault();
+  
+        n.innerText = form.name.value ;
+        p.innerText = form.pass.value;
+      
+
+        // console.log("hello!");
+    }
+  </script>
+</html>

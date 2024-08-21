@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Record</title>
+ <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <!-- Dont make any changes here -->
+    <h1>Hospital - Doctor Record</h1>
+    
+
+    <div>
+      <!-- ***** We are using form here  ****  -->
+      <form>
+        <label >Doctor Name</label><br />
+        <input id="Doctor" type="text" placeholder="Enter Doctor Name" /><br />
+        <label >Doctor ID </label><br />
+        <input type="text" id="docID" placeholder="Enter Doctor ID">
+        <label >Specailization</label>
+        <select id="Spcail">
+          <option value="">Select Specailization</option>
+          <option value="Deremotologist">Deremotologist</option>
+          <option value="Covid">Covid</option>
+          <option value="Gyno">Gyno</option>
+          <option value="Dentist">Dentist</option>
+          <option value="ENT">Ent</option>
+         </select>
+
+        <label >Enter Experience</label>
+        <input type="number" id="exp" placeholder="Enter your exp">
+         <label >Email</label>
+         <input type="email" id="email" placeholder="Enter your email">
+        <label >Mobile</label>
+        <input type="text" id="mobile" placeholder="Enter mobile">
+         <input type="submit" />
+      </form>
+
+      
+      <table>
+        <!-- Dont change order of columns -->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Doc ID</th>
+            <th>Specailization</th>
+            <th>Exp</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Role</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+        <!-- Append your output to tbody -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<script src="./index.js"></script>

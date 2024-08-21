@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+</body>
+<script>
+    // Local Storage 
+    // capcity 8 to 10mb
+    // only string values can be stored
+    // can be accessed from same domain
+
+    // local_storage.setitem("key", "value");
+    // local_storage.getitem("key")
+    // local_storage.removeItem("key")
+    // local_storage.clear()
+
+    // let a = "I am a local storage"
+
+    //  localStorage.setItem("abc", a)
+    //  localStorage.setItem("a", "I am a local storage2")
+  
+
+
+    // //  localStorage.removeItem("abc")
+    //  localStorage.clear()
+
+    //  let b = localStorage.getItem("abc")
+    //  console.log(b)
+ 
+    //  let c;
+    //  console.log(c)
+
+
+    // let num = 123;
+    // console.log(num)
+    // localStorage.setItem("num", num)
+
+    // let n = localStorage.getItem("num")
+    // console.log(n)
+
+
+    // JSON
+
+    // let obj = {
+    //     name: "John",
+    //     age: 30,
+    //     city: "New York"
+    // }
+
+    // let json_obj = {
+    //     "name":"john",
+    //     "age":30,
+    //     "city":"new york"
+    // }
+
+
+    // JSON.stringify()
+    // JSON.parse()
+
+     let num = 123;
+    // console.log(num)
+    localStorage.setItem("num", JSON.stringify(num) )
+
+    let n =    JSON.parse( localStorage.getItem("num"))
+    // console.log(n)
+
+
+    let obj = {
+        name: "John",
+        age: 30,
+        city: "New York"
+    }
+
+    // console.log(obj)
+
+    localStorage.setItem("obj", JSON.stringify(obj))
+
+    let a = JSON.parse( localStorage.getItem("obj"))
+    // console.log(a)
+
+
+    let arr =[ { "name": "John", "age":20}, 12 , "sdfsf"]
+
+    localStorage.setItem("arr", JSON.stringify(arr))
+
+    let b = JSON.parse( localStorage.getItem("arr"))
+
+    console.log(b)
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

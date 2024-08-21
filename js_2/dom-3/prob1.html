@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #main{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+          
+        }
+
+        #main >div{
+            border: 5px solid;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+  </body>
+  <script>
+    let main = document.getElementById("main");
+
+    let data = [
+      {
+        name: "sonu",
+        age: 22,
+        city: "pune",
+        country: "india",
+        hobbies: ["reading", "painting"],
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/sunil_rao_amazon_dfd2daa06d.jpeg",
+      },
+      {
+        name: "ramesh",
+        age: 24,
+        city: "mumbai",
+        country: "india",
+        hobbies: ["gaming", "cooking"],
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sharda_Balaji_Novojuris_2a206f2f88.jpg",
+      },
+      {
+        name: "ram",
+        age: 25,
+        city: "mumbai",
+        country: "india",
+        hobbies: ["gaming", "cooking"],
+        img: "https://masai-website-images.s3.ap-south-1.amazonaws.com/Kulin_Shah_Onsurity_0dd3a1802f.jpg",
+      },
+    ];
+
+    for (let i = 0; i < data.length; i++) {
+        
+        let div = document.createElement("div");
+
+        let name = document.createElement("h1");
+        name.innerText = data[i].name;
+        let age = document.createElement("h2");
+        age.innerText = "Age: " + data[i].age;
+        let city = document.createElement("h3");
+        city.innerText = "City: " + data[i].city;
+        let hobbies = document.createElement("h4");
+        hobbies.innerText = "Hobbies: " + data[i].hobbies[0]
+        let img = document.createElement("img");
+        img.src = data[i].img;
+
+        div.append(img,name,age,city,hobbies)
+        main.append(div);
+    }
+  </script>
+</html>

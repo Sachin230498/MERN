@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+      
+    </div>
+</body>
+ 
+     <script>
+
+        let mainDiv = document.getElementById("main")
+
+
+        let h1 = document.createElement("h1")
+        h1.innerText = "Hello World!"
+
+         let h2 = document.createElement("h2")
+        h2.innerText = "Hello World 2"
+        // console.log(h1)
+
+        let img = document.createElement("img")
+        img.src = "https://cdn.pixabay.com/photo/2024/04/19/04/39/kingfisher-8705377_1280.jpg"
+        img.style.width = "500px";
+
+        // append //appendchild
+        mainDiv.append(img,h1, h2,)
+
+     </script>
+ 
+</html>
+
