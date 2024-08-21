@@ -1,40 +1,58 @@
+// let container = document.getElementById("container");
+// let play = document.getElementById("play")
+// let pause = document.getElementById("stop")
+// let data_arr = JSON.parse(localStorage.getItem("data")) || [];
+// let id; //declare
+// // console.log(data_arr)
 
+// display(data_arr);
 
-let container = document.getElementById("container");
-let data_arr = JSON.parse(localStorage.getItem("data")) || [];
-display(data_arr)
+// function display(data) {
+//   let index = 0;
 
-// console.log(container)
+//   id = setInterval(function () {
+//     container.innerHTML = "";
 
-// console.log(data_arr)
+//     let img = document.createElement("img");
+//     img.src = data_arr[index];
+//     index++;
 
+//     if (index == data.length) {
+//       index = 0;
+//     }
 
-function display(data){
-
-     let index = 0;
-
-
-   
-
-    setInterval(function(){
-          container.innerHTML = "";
-      if (index === data.length) {
-        index = 0;
-      }
-
-            let img = document.createElement("img");
-            img.src = data[index];
-            index++;
-            container.append(img);
-
-    }, 1000)
+//     container.append(img);
+//   }, 2000);
+// }
 
 
 
-    
-}
-8120000002
+// pause.addEventListener("click", pausefun)
 
 
 
 
+// //clearinterval(id)
+
+// function pausefun(){
+//   // console.log("hello")
+//   clearInterval(id)
+// }
+
+
+// play.addEventListener("click", playfun);
+
+// function playfun() {
+//   display(data_arr);
+// }
+
+
+let a = new Date()
+console.log(a)
+
+
+let b = a.getHours()
+console.log(b)
+
+let c = a.getMinutes();
+console.log(c);
