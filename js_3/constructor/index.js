@@ -37,18 +37,24 @@ function NikeProductCF(n,p){
 
 
 let b = new NikeProductCF("shoes", 5000)
-console.log(b)
+//  console.log(b)
 
 
 // this object
 // new  return
 
 let c = new NikeProductCF("run", 12000)
-console.log(c)
+// console.log(c)
+
+
 
 
 
 
 
 let d = new Array()
-console.log(d)
+ console.log(d)
+
+
+ let obj = new Object()
+ console.log(obj)
