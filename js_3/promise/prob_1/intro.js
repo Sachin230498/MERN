@@ -21,7 +21,7 @@ let data = false;
 
 function prp(){
  let promise = new Promise(function(resolve,reject){
-    data = true
+    // data = true
     if(data){
         resolve("Data fatched success")
     }else{
